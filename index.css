@@ -1,0 +1,12 @@
+body{
+    background: black;
+    padding: 30px;
+    margin: 30px;
+    color: white;
+    font-size: 50px;
+}
+
+.jsImg{
+    width: 200px;
+    height: 200px;
+}
