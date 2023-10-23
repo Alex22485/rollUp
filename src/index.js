@@ -122,6 +122,7 @@
 import "../index.css"
 import JS_IMAGE from '../assets/jsPmg.png'
 
+
 // Вставляем картинку
 const img = document.createElement('img')
 img.className = 'jsImg'
