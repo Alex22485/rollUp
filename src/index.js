@@ -120,10 +120,10 @@
 
 
 //! 4. rollup-plugin-serve
-// для запуска проекта на локальном сервере, чтобы при изменении файлов автоматически пересобирался проект
+// для запуска проекта на локальном сервере
 // Установка
 //! npm install --save-dev rollup-plugin-serve
-// далее импортируем согласно документации в rollup.config.js:
+// далее импортируем согласно документации в rollup.rollup.config.js:
 // ! import serve from 'rollup-plugin-serve'
 //! serve({
 //         open: true, //  открывает страницу в браузере автоматически
@@ -131,6 +131,24 @@
 //         port: 8000, // порт на котором будет открываться наш локальный сервер
 //     })
 // далее запускаем rollup -c  и автоматически откроется браузер с нашей страничкой
+
+
+//! 5. rollup-plugin-livereload
+// чтобы при изменении файлов автоматически пересобирался проект
+// Установка
+// ! npm install --save-dev rollup-plugin-livereload
+// далее импортируем согласно документации в rollup.rollup.config.js:
+// ! import livereload from 'rollup-plugin-livereload'
+//!  plugins: [livereload()],
+// далее запускаем:
+//! rollup -c -w (w обозначает смотреть за изменениями watch)
+
+// !==== чтобы каждый раз не вводть команду  rollup -c -w
+// создадим script в файле package.json ключ scripts:
+// Н-р "dev": "rollup -c -w"
+// Н-р "prod": "rollup -c" // для продакшина
+// теперь чтобы их запустить пишем:
+// npm run dev (или npm run prod)
 
 import "../index.css"
 import JS_IMAGE from '../assets/jsPmg.png'
