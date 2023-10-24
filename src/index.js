@@ -116,6 +116,9 @@
 //! import JS_IMAGE from '../assets/JavaScriptLogo.png'
 // создаем HTML img
 // вызываем rollup -c
+// ! не забудь defer поставить или в конце body script записать
+
+//! 4. rollup-plugin-img
 
 
 
