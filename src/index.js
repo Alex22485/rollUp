@@ -118,9 +118,19 @@
 // вызываем rollup -c
 // ! не забудь defer поставить или в конце body script записать
 
-//! 4. rollup-plugin-img
 
-
+//! 4. rollup-plugin-serve
+// для запуска проекта на локальном сервере, чтобы при изменении файлов автоматически пересобирался проект
+// Установка
+//! npm install --save-dev rollup-plugin-serve
+// далее импортируем согласно документации в rollup.config.js:
+// ! import serve from 'rollup-plugin-serve'
+//! serve({
+//         open: true, //  открывает страницу в браузере автоматически
+//         contentBase: './', // 'это базовая директория откуда берутся наши файлы 
+//         port: 8000, // порт на котором будет открываться наш локальный сервер
+//     })
+// далее запускаем rollup -c  и автоматически откроется браузер с нашей страничкой
 
 import "../index.css"
 import JS_IMAGE from '../assets/jsPmg.png'

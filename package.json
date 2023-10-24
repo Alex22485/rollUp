@@ -16,6 +16,7 @@
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-image": "^3.0.3",
+    "rollup-plugin-serve": "^2.0.2",
     "rollup-plugin-styles": "^4.0.0"
   }
 }
