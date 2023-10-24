@@ -87,7 +87,6 @@
 
 // чтобы подключить babel введем в rollup.config.js (указано на сайте ссылка выше):
 //! import { babel } from '@rollup/plugin-babel'; 
-
 //! plugins: [babel({ babelHelpers: 'bundled' })]
 
 //! 2. rollup-plugin-styles
@@ -95,13 +94,14 @@
 //! npm install -D rollup-plugin-styles
 // -D значит тоже что и --save-dev
 // и подключаем его в package.json:
-// import styles from "rollup-plugin-styles"; и вызываем 
+// import styles from "rollup-plugin-styles";
+// styles() в ключ plugins
 // далее в index.js прописыаем:
 //! import "../index.css"
-// "..// означает что неообходимо выйти вверз из папки src и выбрать далее файл index.css"
+// "..// означает что неообходимо выйти вверх из папки src и выбрать далее файл index.css"
 // Далее запускаем rollup -c
 
-//! 3. rollup-plugin-img
+//! 3. rollup-plugin-img (или rollup/plugin-image)
 // Плагин чтобы видеть картинки
 // Установка:
 //! npm install -D rollup-plugin-img
@@ -148,7 +148,7 @@
 // Н-р "dev": "rollup -c -w"
 // Н-р "prod": "rollup -c" // для продакшина
 // теперь чтобы их запустить пишем:
-// npm run dev (или npm run prod)
+//! npm run dev (или npm run prod)
 
 import "../index.css"
 import JS_IMAGE from '../assets/jsPmg.png'
